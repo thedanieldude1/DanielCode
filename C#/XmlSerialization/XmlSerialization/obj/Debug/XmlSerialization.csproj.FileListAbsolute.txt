@@ -1,0 +1,6 @@
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\bin\Debug\XmlSerialization.exe.config
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\bin\Debug\XmlSerialization.exe
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\bin\Debug\XmlSerialization.pdb
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\obj\Debug\XmlSerialization.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\obj\Debug\XmlSerialization.exe
+C:\DanielCode\C#\XmlSerialization\XmlSerialization\obj\Debug\XmlSerialization.pdb

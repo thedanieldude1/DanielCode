@@ -1,0 +1,40 @@
+[14:13:34] [main/INFO]: Logging in with username & password
+[14:13:39] [Client thread/INFO]: Setting user: thedanieldude
+[14:13:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:13:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[14:13:48] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:13:48] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[14:13:48] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:13:48] [Thread-9/INFO]: OpenAL initialized.
+[14:13:48] [Sound Library Loader/INFO]: Sound engine started
+[14:13:48] [Twitch authenticator/ERROR]: Given twitch access token is invalid
+[14:13:51] [Client thread/INFO]: Created: 16x16 textures-atlas
+[14:13:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[14:13:53] [Client thread/INFO]: SoundSystem shutting down...
+[14:13:53] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[14:13:53] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:13:53] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[14:13:53] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:13:53] [Thread-11/INFO]: OpenAL initialized.
+[14:13:54] [Sound Library Loader/INFO]: Sound engine started
+[14:13:56] [Client thread/INFO]: Created: 512x512 textures-atlas
+[14:14:05] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[14:14:05] [Server thread/INFO]: Generating keypair
+[14:14:05] [Server thread/INFO]: Preparing start region for level 0
+[14:14:06] [Server thread/INFO]: Preparing spawn area: 73%
+[14:14:07] [Server thread/INFO]: Changing view distance to 8, from 10
+[14:14:09] [Server thread/INFO]: thedanieldude[local:E:679f7b37] logged in with entity id 241 at (67.38606143950302, 76.0, -156.26784864196097)
+[14:14:09] [Server thread/INFO]: thedanieldude joined the game
+[14:14:15] [Server thread/INFO]: Saving and pausing game...
+[14:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:14:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:14:16] [Server thread/INFO]: Stopping server
+[14:14:16] [Server thread/INFO]: Saving players
+[14:14:16] [Server thread/INFO]: Saving worlds
+[14:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:14:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:14:17] [Client thread/INFO]: Stopping!
+[14:14:17] [Client thread/INFO]: SoundSystem shutting down...
+[14:14:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

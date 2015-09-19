@@ -1,0 +1,7 @@
+package com.thedanieldude.test.items;
+
+public final class ModItems {
+	public static void createItems(){
+		
+	}
+}

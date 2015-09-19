@@ -1,0 +1,6 @@
+package com.thedanieldude.test;
+@Mod(modid = Main.MODID,name = main.MODNAME, version = Main.VERSION)
+public class Main {
+	public static final String MODNAME = "Test Mod";
+
+}

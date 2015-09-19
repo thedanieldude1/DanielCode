@@ -1,0 +1,5 @@
+package com.thedanieldude.test.client.render.items;
+
+public class ItemRenderRegister {
+
+}

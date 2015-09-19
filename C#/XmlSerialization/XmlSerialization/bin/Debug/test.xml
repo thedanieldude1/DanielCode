@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDict xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dict>
+    <Key xsi:type="xsd:string">test</Key>
+    <Value xsi:type="xsd:string">10</Value>
+  </Dict>
+</ArrayOfDict>

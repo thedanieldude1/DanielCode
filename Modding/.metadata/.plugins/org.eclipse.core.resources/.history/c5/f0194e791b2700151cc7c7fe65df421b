@@ -1,0 +1,9 @@
+package com.thedanieldude.test.items;
+
+import net.minecraft.item.Item;
+
+public class TestItem extends Item {
+	public TestItem(String unlocalizedName){
+		super(unlocalizedName);
+	}
+}

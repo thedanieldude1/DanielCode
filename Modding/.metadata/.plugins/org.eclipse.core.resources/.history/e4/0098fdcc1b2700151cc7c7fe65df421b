@@ -1,0 +1,10 @@
+package com.thedanieldude.test.items;
+
+import net.minecraft.item.Item;
+
+public final class ModItems {
+	public static Item testItem;
+	public static void createItems(){
+		GameRegistry.registerItem(testItem=new TestItem("test"));
+	}
+}
