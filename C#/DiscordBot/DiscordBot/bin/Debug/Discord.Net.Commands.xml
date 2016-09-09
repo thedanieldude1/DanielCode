@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Discord.Net.Commands</name>
+    </assembly>
+    <members>
+        <member name="F:Discord.Commands.ParameterType.Required">
+            <summary> Catches a single required parameter. </summary>
+        </member>
+        <member name="F:Discord.Commands.ParameterType.Optional">
+            <summary> Catches a single optional parameter. </summary>
+        </member>
+        <member name="F:Discord.Commands.ParameterType.Multiple">
+            <summary> Catches a zero or more optional parameters. </summary>
+        </member>
+        <member name="F:Discord.Commands.ParameterType.Unparsed">
+            <summary> Catches all remaining text as a single optional parameter. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.PrefixChar">
+            <summary> Gets or sets the prefix character used to trigger commands, if ActivationMode has the Char flag set. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.AllowMentionPrefix">
+            <summary> Gets or sets whether a message beginning with a mention to the logged-in user should be treated as a command. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.CustomPrefixHandler">
+            <summary> 
+            Gets or sets a custom function used to detect messages that should be treated as commands.
+            This function should a positive one indicating the index of where the in the message's RawText the command begins, 
+            and a negative value if the message should be ignored.
+            </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.HelpMode">
+            <summary> Gets or sets whether a help function should be automatically generated. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.ExecuteHandler">
+            <summary> Gets or sets a handler that is called on any successful command execution. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfigBuilder.ErrorHandler">
+            <summary> Gets or sets a handler that is called on any error during command parsing or execution. </summary>
+        </member>
+        <member name="P:Discord.Commands.CommandServiceConfig.HelpMode">
+            <summary> Gets or sets whether a help function should be automatically generated. </summary>
+        </member>
+        <member name="F:Discord.Commands.HelpMode.Disabled">
+            <summary> Disable the automatic help command. </summary>
+        </member>
+        <member name="F:Discord.Commands.HelpMode.Public">
+            <summary> Use the automatic help command and respond in the channel the command is used. </summary>
+        </member>
+        <member name="F:Discord.Commands.HelpMode.Private">
+            <summary> Use the automatic help command and respond in a private message. </summary>
+        </member>
+    </members>
+</doc>

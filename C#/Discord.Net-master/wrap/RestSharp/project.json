@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../../../Users/Daniel/.nuget/packages/RestSharp/105.2.3/lib/net45/RestSharp.dll"
+      }
+    }
+  }
+}

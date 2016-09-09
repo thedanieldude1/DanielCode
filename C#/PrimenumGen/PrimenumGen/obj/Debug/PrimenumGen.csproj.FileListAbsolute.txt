@@ -1,0 +1,6 @@
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\bin\Debug\PrimenumGen.exe.config
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\bin\Debug\PrimenumGen.exe
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\bin\Debug\PrimenumGen.pdb
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\obj\Debug\PrimenumGen.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\obj\Debug\PrimenumGen.exe
+C:\DanielCode\C#\PrimenumGen\PrimenumGen\obj\Debug\PrimenumGen.pdb

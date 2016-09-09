@@ -1,0 +1,5 @@
+C:\DanielCode\C#\LargeCollections\LargeCollections\bin\Debug\LargeCollections.dll
+C:\DanielCode\C#\LargeCollections\LargeCollections\bin\Debug\LargeCollections.pdb
+C:\DanielCode\C#\LargeCollections\LargeCollections\obj\Debug\LargeCollections.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\LargeCollections\LargeCollections\obj\Debug\LargeCollections.dll
+C:\DanielCode\C#\LargeCollections\LargeCollections\obj\Debug\LargeCollections.pdb

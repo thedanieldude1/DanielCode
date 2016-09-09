@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../../../Users/Daniel/.nuget/packages/Nito.AsyncEx/3.0.1/lib/net45/Nito.AsyncEx.dll"
+      },
+      "dependencies": {
+        "Nito.AsyncEx.Enlightenment": "1.0.0-*"
+      }
+    }
+  }
+}

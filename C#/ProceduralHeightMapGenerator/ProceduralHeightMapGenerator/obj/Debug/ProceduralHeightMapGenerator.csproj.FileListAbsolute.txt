@@ -1,0 +1,2 @@
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\bin\Debug\ProceduralHeightMapGenerator.exe.config
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\obj\Debug\ProceduralHeightMapGenerator.csprojResolveAssemblyReference.cache

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{0763DC3D-4B2A-43FA-A8AC-B543097045AD}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\DanielCode\C#\NeuralNetworkSimulator\NeuralNetworkSimulator\NeuralNetworkSimulatorContent\</RootDirectory>
+      <LoggerRootDirectory>C:\DanielCode\C#\NeuralNetworkSimulator\NeuralNetworkSimulator\NeuralNetworkSimulator\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\DanielCode\C#\NeuralNetworkSimulator\NeuralNetworkSimulator\NeuralNetworkSimulator\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\DanielCode\C#\NeuralNetworkSimulator\NeuralNetworkSimulator\NeuralNetworkSimulator\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2016-05-19T18:29:41.1947004-07:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

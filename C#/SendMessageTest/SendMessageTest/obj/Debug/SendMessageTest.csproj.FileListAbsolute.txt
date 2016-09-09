@@ -1,0 +1,6 @@
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\bin\Debug\SendMessageTest.exe.config
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\bin\Debug\SendMessageTest.exe
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\bin\Debug\SendMessageTest.pdb
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\obj\Debug\SendMessageTest.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\obj\Debug\SendMessageTest.exe
+C:\DanielCode\C#\SendMessageTest\SendMessageTest\obj\Debug\SendMessageTest.pdb

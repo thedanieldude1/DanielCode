@@ -1,0 +1,6 @@
+C:\DanielCode\C#\VirusServer\VirusServer\bin\Debug\VirusServer.exe.config
+C:\DanielCode\C#\VirusServer\VirusServer\obj\Debug\VirusServer.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\VirusServer\VirusServer\bin\Debug\VirusServer.exe
+C:\DanielCode\C#\VirusServer\VirusServer\bin\Debug\VirusServer.pdb
+C:\DanielCode\C#\VirusServer\VirusServer\obj\Debug\VirusServer.exe
+C:\DanielCode\C#\VirusServer\VirusServer\obj\Debug\VirusServer.pdb

@@ -1,0 +1,6 @@
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\obj\Debug\String to xd's xdxdxdx.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\bin\Debug\String to xds xdxdxdx.exe.config
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\bin\Debug\String to xds xdxdxdx.exe
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\bin\Debug\String to xds xdxdxdx.pdb
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\obj\Debug\String to xds xdxdxdx.exe
+C:\DanielCode\C#\String to xd's xdxdxdx\String to xd's xdxdxdx\obj\Debug\String to xds xdxdxdx.pdb

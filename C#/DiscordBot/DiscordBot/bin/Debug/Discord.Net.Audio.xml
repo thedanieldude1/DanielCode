@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Discord.Net.Audio</name>
+    </assembly>
+    <members>
+        <member name="P:Discord.Audio.AudioServiceConfigBuilder.Mode">
+            <summary> Enables the voice websocket and UDP client and specifies how it will be used. </summary>
+        </member>
+        <member name="P:Discord.Audio.AudioServiceConfigBuilder.EnableEncryption">
+            <summary> Enables the voice websocket and UDP client. This option requires the libsodium .dll or .so be in the local or system folder. </summary>
+        </member>
+        <member name="P:Discord.Audio.AudioServiceConfigBuilder.BufferLength">
+            <summary> Gets or sets the buffer length (in milliseconds) for outgoing voice packets. </summary>
+        </member>
+        <member name="P:Discord.Audio.AudioServiceConfigBuilder.Bitrate">
+            <summary> Gets or sets the bitrate used (in kbit/s, between 1 and MaxBitrate inclusively) for outgoing voice packets. A null value will use default Opus settings. </summary>
+        </member>
+        <member name="P:Discord.Audio.AudioServiceConfigBuilder.Channels">
+            <summary> Gets or sets the number of channels (1 or 2) used in both input provided to IAudioClient and output send to Discord. Defaults to 2 (stereo). </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.Id">
+            <summary> Gets the unique identifier for this client. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.SessionId">
+            <summary> Gets the session id for the current connection. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.State">
+            <summary> Gets the current state of this client. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.Channel">
+            <summary> Gets the channel this client is currently a member of. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.Server">
+            <summary> Gets the server this client is bound to. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.OutputStream">
+            <summary> Gets a stream object that wraps the Send() function. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.CancelToken">
+            <summary> Gets a cancellation token that triggers when the client is manually disconnected. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.ClientAPI">
+            <summary> Gets the internal RestClient for the Client API endpoint. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.GatewaySocket">
+            <summary> Gets the internal WebSocket for the Gateway event stream. </summary>
+        </member>
+        <member name="P:Discord.Audio.IAudioClient.VoiceSocket">
+            <summary> Gets the internal WebSocket for the Voice control stream. </summary>
+        </member>
+        <member name="M:Discord.Audio.IAudioClient.Join(Discord.Channel)">
+            <summary> Moves the client to another channel on the same server. </summary>
+        </member>
+        <member name="M:Discord.Audio.IAudioClient.Disconnect">
+            <summary> Disconnects from the Discord server, canceling any pending requests. </summary>
+        </member>
+        <member name="M:Discord.Audio.IAudioClient.Send(System.Byte[],System.Int32,System.Int32)">
+            <summary> Sends a PCM frame to the voice server. Will block until space frees up in the outgoing buffer. </summary>
+            <param name="data">PCM frame to send. This must be a single or collection of uncompressed 48Kz monochannel 20ms PCM frames. </param>
+            <param name="offset">Offset . </param>
+            <param name="count">Number of bytes in this frame. </param>
+        </member>
+        <member name="M:Discord.Audio.IAudioClient.Clear">
+            <summary> Clears the PCM buffer. </summary>
+        </member>
+        <member name="M:Discord.Audio.IAudioClient.Wait">
+            <summary> Blocks until the voice output buffer is empty. </summary>
+        </member>
+        <member name="F:Discord.Audio.Opus.OpusConverter.BitsPerSample">
+            <summary> Gets the bit rate of this converter. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.InputSamplingRate">
+            <summary> Gets the input sampling rate of this converter. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.InputChannels">
+            <summary> Gets the number of channels of this converter. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.FrameLength">
+            <summary> Gets the milliseconds per frame. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.SamplesPerFrame">
+            <summary> Gets the number of samples per frame. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.FrameSize">
+            <summary> Gets the bytes per frame. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusConverter.SampleSize">
+            <summary> Gets the bytes per sample. </summary>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusDecoder.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary> Creates a new Opus decoder. </summary>
+            <param name="samplingRate">Sampling rate of the input PCM (in Hz). Supported Values:  8000, 12000, 16000, 24000, or 48000</param>
+            <param name="frameLength">Length, in milliseconds, of each frame. Supported Values: 2.5, 5, 10, 20, 40, or 60</param>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusDecoder.DecodeFrame(System.Byte[],System.Int32,System.Int32,System.Byte[])">
+            <summary> Produces PCM samples from Opus-encoded audio. </summary>
+            <param name="input">PCM samples to decode.</param>
+            <param name="inputOffset">Offset of the frame in input.</param>
+            <param name="output">Buffer to store the decoded frame.</param>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusEncoder.BitRate">
+            <summary> Gets the bit rate in kbit/s. </summary>
+        </member>
+        <member name="P:Discord.Audio.Opus.OpusEncoder.Application">
+            <summary> Gets the coding mode of the encoder. </summary>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusEncoder.#ctor(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},Discord.Audio.Opus.OpusApplication)">
+            <summary> Creates a new Opus encoder. </summary>
+            <param name="samplingRate">Sampling rate of the input signal (Hz). Supported Values:  8000, 12000, 16000, 24000, or 48000</param>
+            <param name="channels">Number of channels in input signal. Supported Values: 1 or 2</param>
+            <param name="frameLength">Length, in milliseconds, that each frame takes. Supported Values: 2.5, 5, 10, 20, 40, 60</param>
+            <param name="bitrate">Bitrate (kbit/s) used for this encoder. Supported Values: 1-512. Null will use the recommended bitrate. </param>
+            <param name="application">Coding mode.</param>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusEncoder.EncodeFrame(System.Byte[],System.Int32,System.Byte[])">
+            <summary> Produces Opus encoded audio from PCM samples. </summary>
+            <param name="input">PCM samples to encode.</param>
+            <param name="inputOffset">Offset of the frame in pcmSamples.</param>
+            <param name="output">Buffer to store the encoded frame.</param>
+            <returns>Length of the frame contained in outputBuffer.</returns>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusEncoder.SetForwardErrorCorrection(System.Boolean)">
+            <summary> Gets or sets whether Forward Error Correction is enabled. </summary>
+        </member>
+        <member name="M:Discord.Audio.Opus.OpusEncoder.SetBitrate(System.Int32)">
+            <summary> Gets or sets whether Forward Error Correction is enabled. </summary>
+        </member>
+    </members>
+</doc>

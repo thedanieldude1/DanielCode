@@ -1,0 +1,1 @@
+C:\DanielCode\C#\DiscordSharp-master\DiscordSharp\obj\Debug\DiscordSharp.csprojResolveAssemblyReference.cache

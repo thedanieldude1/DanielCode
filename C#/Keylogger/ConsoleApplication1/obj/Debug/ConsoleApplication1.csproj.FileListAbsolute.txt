@@ -1,0 +1,6 @@
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\DanielCode\C#\Keylogger\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rolePerms />
+  <commandPerms>
+    <CommandPermission>
+      <Command>changename</Command>
+      <Level>69</Level>
+    </CommandPermission>
+    <CommandPermission>
+      <Command>permissions</Command>
+      <Level>68</Level>
+    </CommandPermission>
+  </commandPerms>
+  <userPerms>
+    <UserPermission>
+      <UserID>142422765478215680</UserID>
+      <Level>69</Level>
+    </UserPermission>
+  </userPerms>
+  <userCommandPerms>
+    <UserCommandPermission>
+      <UserID>142420322618966016</UserID>
+      <Command>addcustomcommand</Command>
+      <enabled>false</enabled>
+    </UserCommandPermission>
+    <UserCommandPermission>
+      <UserID>164929769685647361</UserID>
+      <Command>sarah_by_proxy</Command>
+      <enabled>true</enabled>
+    </UserCommandPermission>
+  </userCommandPerms>
+  <channelPerms />
+  <roleCommandPerms />
+  <ID>192698931057131520</ID>
+</ServerConfig>

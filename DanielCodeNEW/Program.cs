@@ -63,6 +63,7 @@ namespace ConsoleApplication1
 				if(val>1) val = 1;
 				if(val<-1) val = -1;
 				//val*=255;
+				val= vor.GetValue(x,y,0);
 		  		val = ((val+1)/(1+1) *(1+0)+0)*255;
 				double red =255*((biomeval1+1)/2);
 				double green = 255*((biomeval2+1)/2);
@@ -72,6 +73,7 @@ namespace ConsoleApplication1
 				//Console.Beep((int)test,100);
 				map.SetPixel(x+resolution/2,y+resolution/2,Color.FromArgb((int)val,(int)val,(int)val));
 				map1.SetPixel(x+resolution/2,y+resolution/2,Color.FromArgb((int)red,(int)green,(int)0));
+				Console.ReadLine();
 }}
 map.Save("test.png",ImageFormat.Png);
 map1.Save("test1.png",ImageFormat.Png);
@@ -232,7 +234,7 @@ public class Voronoi:ValueNoiseBasis{
                     }
                 }
             }
-
+			
             double value;
 	    double valuesecondBest=0;
 		//double xsecondBestDist = xsecondBest-x;
@@ -260,18 +262,24 @@ public class Voronoi:ValueNoiseBasis{
             int x0 = (xCandidate > 0.0 ? (int)xCandidate : (int)xCandidate - 1);
             int y0 = (yCandidate > 0.0 ? (int)yCandidate : (int)yCandidate - 1);
             int z0 = (zCandidate > 0.0 ? (int)zCandidate : (int)zCandidate - 1);
-	   // int x1 = (xsecondBest > 0.0 ? (int)xsecondBest : (int)xsecondBest - 1);
-	   // int y1 = (ysecondBest > 0.0 ? (int)ysecondBest : (int)ysecondBest - 1);
-	   // int z1 = (zsecondBest > 0.0 ? (int)zsecondBest : (int)zsecondBest - 1);
-            //double xDist1 = xCandidate - xsecondBest;
-            ////double yDist1 = yCandidate - ysecondBest;
-            //double zDist1 = zCandidate - zsecondBest;
-           /// double distance = xDist1*xDist1+yDist1*yDist1+zDist1*zDist1;
-	    //double ratio = (seconddistbest/distance-.5)*2;
-	   // value = 0;
-	    //Console.WriteLine(minDist+" "+distance+" "+ratio);
+			int x1 = (xsecondBest > 0.0 ? (int)xsecondBest : (int)xsecondBest - 1);
+			int y1 = (ysecondBest > 0.0 ? (int)ysecondBest : (int)ysecondBest - 1);
+			int z1 = (zsecondBest > 0.0 ? (int)zsecondBest : (int)zsecondBest - 1);
+			float midx = (-xCandidate+xsecondBest)/2;
+			float midy = (-yCandidate+ysecondBest)/2;
+			float linenormalx = -midy;
+			float linenormaly = midx;
+			float slope = linenormaly/linenormalx;
+			float distancefromline = Math.Abs(slope*(xCandidate-midx)+(yCandidate-midy))/Math.Sqrt(slope*slope+1);
+			float interpval = 0;
+			if(distancefromline<=10){
+				interpval = distancefromline/10f;
+			}
+			float mynoise = (double)ValueNoise(x0, y0, z0);
+			float othernoise = (double)ValueNoise(x1, y1, z1)
+			value = mynoise-(mynoise-othernoise)*interpval;
             // Return the calculated distance with the displacement value applied.
-            return  value+ (Displacement * ((double)ValueNoise(x0, y0, z0)));//Program.Lerp((double)ValueNoise(x0, y0, z0),(double)ValueNoise(x1, y1, z1),ratio));
+            return  value;//+ (Displacement * ((double)ValueNoise(x0, y0, z0)));//Program.Lerp((double)ValueNoise(x0, y0, z0),(double)ValueNoise(x1, y1, z1),ratio));
         }
     }
     public class ValueNoiseBasis        

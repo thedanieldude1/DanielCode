@@ -1,0 +1,15 @@
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Discord.Net.Commands.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Discord.Net.Commands.pdb
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Newtonsoft.Json.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Nito.AsyncEx.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\RestSharp.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\WebSocket4Net.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Discord.Net.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\bin\Debug\Discord.Net.pdb
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\obj\Debug\Discord.Net.Commands.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\obj\Debug\Discord.Net.Commands.dll
+C:\DanielCode\C#\Discord.Net-master\src\Discord.Net.Commands.Net45\obj\Debug\Discord.Net.Commands.pdb
+C:\DanielCode\C#\DiscordBot\DiscordBot\bin\Debug\Discord.Net.Commands.dll
+C:\DanielCode\C#\DiscordBot\DiscordBot\bin\Debug\Discord.Net.Commands.pdb

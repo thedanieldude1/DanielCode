@@ -1,0 +1,2 @@
+C:\DanielCode\C#\DiscordSharp-master\DiscordSharpTestApplication\obj\Debug\Luigibot.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\DiscordSharp-master\DiscordSharpTestApplication\obj\Debug\Luigibot.csproj.Luigibot.exe.config

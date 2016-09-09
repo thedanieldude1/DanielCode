@@ -1,0 +1,5 @@
+C:\DanielCode\C#\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.dll
+C:\DanielCode\C#\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.pdb
+C:\DanielCode\C#\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.dll
+C:\DanielCode\C#\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.pdb

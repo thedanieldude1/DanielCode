@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../../../Users/Daniel/.nuget/packages/WebSocket4Net/0.14.1/lib/net45/WebSocket4Net.dll"
+      }
+    }
+  }
+}

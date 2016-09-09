@@ -1,0 +1,6 @@
+C:\DanielCode\C#\Network\Network\bin\Debug\Network.exe.config
+C:\DanielCode\C#\Network\Network\bin\Debug\Network.exe
+C:\DanielCode\C#\Network\Network\bin\Debug\Network.pdb
+C:\DanielCode\C#\Network\Network\obj\Debug\Network.exe
+C:\DanielCode\C#\Network\Network\obj\Debug\Network.pdb
+C:\DanielCode\C#\Network\Network\obj\Debug\Network.csprojResolveAssemblyReference.cache

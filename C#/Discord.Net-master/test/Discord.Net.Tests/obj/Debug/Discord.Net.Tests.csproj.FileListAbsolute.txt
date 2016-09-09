@@ -1,0 +1,14 @@
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Discord.Net.Tests.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Discord.Net.Tests.pdb
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\obj\Debug\Discord.Net.Tests.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\obj\Debug\Discord.Net.Tests.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\obj\Debug\Discord.Net.Tests.pdb
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Discord.Net.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Nito.AsyncEx.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\WebSocket4Net.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\RestSharp.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\DanielCode\C#\Discord.Net-master\test\Discord.Net.Tests\bin\Debug\Discord.Net.pdb

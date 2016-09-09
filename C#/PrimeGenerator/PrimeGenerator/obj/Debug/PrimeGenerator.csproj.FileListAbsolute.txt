@@ -1,0 +1,8 @@
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\bin\Debug\PrimeGenerator.exe.config
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\bin\Debug\PrimeGenerator.exe
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\bin\Debug\PrimeGenerator.pdb
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\bin\Debug\LargeCollections.dll
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\bin\Debug\LargeCollections.pdb
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\obj\Debug\PrimeGenerator.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\obj\Debug\PrimeGenerator.exe
+C:\DanielCode\C#\PrimeGenerator\PrimeGenerator\obj\Debug\PrimeGenerator.pdb

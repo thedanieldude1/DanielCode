@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rolePerms />
+  <commandPerms>
+    <CommandPermission>
+      <Command>changename</Command>
+      <Level>69</Level>
+    </CommandPermission>
+    <CommandPermission>
+      <Command>permissions</Command>
+      <Level>68</Level>
+    </CommandPermission>
+  </commandPerms>
+  <userPerms />
+  <userCommandPerms />
+  <channelPerms />
+  <roleCommandPerms />
+  <ID>110373943822540800</ID>
+</ServerConfig>
