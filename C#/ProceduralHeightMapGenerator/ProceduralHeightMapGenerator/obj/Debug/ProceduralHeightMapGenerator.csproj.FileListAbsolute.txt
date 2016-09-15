@@ -1,2 +1,7 @@
 C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\bin\Debug\ProceduralHeightMapGenerator.exe.config
 C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\obj\Debug\ProceduralHeightMapGenerator.csprojResolveAssemblyReference.cache
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\obj\Debug\ProceduralHeightMapGenerator.exe
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\obj\Debug\ProceduralHeightMapGenerator.pdb
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\bin\Debug\ProceduralHeightMapGenerator.exe
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\bin\Debug\ProceduralHeightMapGenerator.pdb
+C:\DanielCode\C#\ProceduralHeightMapGenerator\ProceduralHeightMapGenerator\bin\Debug\LibNoise.dll

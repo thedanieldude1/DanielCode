@@ -20,6 +20,7 @@ namespace ProceduralHeightMapGenerator
 			Bitmap output = new Bitmap(resolution,resolution);
 			IModule Module = GetEarthModule(0,resolution);
 			for(int x = 0;x<resolution-1;x++){
+                Console.WriteLine("iteration " + x + "/1024");
 				for(int y = 0;y<resolution-1;y++){
 					double val = Module.GetValue((double)x-5000,(double)y,0);
 					if(val>1) val = 1;
@@ -92,8 +93,8 @@ namespace ProceduralHeightMapGenerator
 			//Final2.EdgeFalloff = .5;
 			Select Final3 = new Select(Finalx,Final,Final2);
 						Final3.SetBounds(0,100);
-						var outpoot = new AbsoluteOutput(new VoronoiRelaxed(){Frequency=4*factor,RelaxationFactor=.2});
-			var zones = /*new VoronoiLarge(new VoronoiLarge(*/new VoronoiLarge(outpoot){Frequency=factor*20,RelaxationFactor=.75};//){Frequency=factor*8,RelaxationFactor=0}){Frequency=factor*16,RelaxationFactor=0};
+						var outpoot = new AbsoluteOutput(new VoronoiRelaxed(){Frequency=4*factor,RelaxationFactor=1 });
+			var zones = /*new VoronoiLarge(new VoronoiLarge(*/new VoronoiLarge(outpoot){Frequency=factor*4,RelaxationFactor=1};//){Frequency=factor*8,RelaxationFactor=0}){Frequency=factor*16,RelaxationFactor=0};
 			var fin = new Select(Continentsprescale,new Constant(0),zones);
 			fin.SetBounds(0,100);		//Final3.EdgeFalloff = .5;
 			return fin;
@@ -196,7 +197,10 @@ namespace LibNoise
 			source = Source;
 			RelaxationFactor=1;
         }
-
+        public static double Lerp(double value1, double value2, double amount)
+        {
+            return value1 + (value2 - value1) * amount;
+        }
         public double GetValue(double x, double y, double z)
         {
             x *= Frequency;
@@ -260,12 +264,55 @@ namespace LibNoise
                 value = 0.0;
             }
 
-            int x0 = (xCandidate > 0.0 ? (int)(xCandidate/Frequency) : (int)((xCandidate - 1)/Frequency));
-            int y0 = (yCandidate > 0.0 ? (int)(yCandidate/Frequency) : (int)((yCandidate - 1)/Frequency));
-            int z0 = (zCandidate > 0.0 ? (int)(zCandidate/Frequency) : (int)((zCandidate - 1)/Frequency));
+            int x0 = (xCandidate > 0.0 ? (int)(xCandidate) : (int)((xCandidate - 1)));
+            int y0 = (yCandidate > 0.0 ? (int)(yCandidate) : (int)((yCandidate - 1)));
+            int z0 = (zCandidate > 0.0 ? (int)(zCandidate) : (int)((zCandidate - 1)));
+            double values = 0;
+            double iterations = 0;
+            for (int zCur = z0 ; zCur <= z0; zCur++)
+            {
+                for (int yCur = y0 - 1; yCur <= y0 + 1; yCur++)
+                {
+                    for (int xCur = x0 - 1; xCur <= x0 + 1; xCur++)
+                    {
+                        if (xCur == x0 && yCur == y0) { continue; }
+                        double xPos = xCur + ValueNoise(xCur, yCur, zCur, Seed) * RelaxationFactor;
+                        double yPos = yCur + ValueNoise(xCur, yCur, zCur, Seed + 1) * RelaxationFactor;
+                        double zPos = zCur + ValueNoise(xCur, yCur, zCur, Seed + 2) * RelaxationFactor;
+                        double xDist = xPos - xCandidate;
+                        double yDist = yPos - yCandidate;
+                        double zDist = zPos - zCandidate;
+                        double distance = System.Math.Sqrt(xDist * xDist + yDist * yDist + zDist * zDist);
+                        double xMidpoint = (xPos + xCandidate) / 2;
+                        double yMidpoint = (yPos + yCandidate) / 2;
+                        double zMidpoint = (zPos + zCandidate) / 2;
 
-            // Return the calculated distance with the displacement value applied.
-            return value + (Displacement * source.GetValue(x0, y0, z0));
+                        double slope = -xMidpoint / yMidpoint;
+                        double linedist = System.Math.Abs(slope * (x - xMidpoint) - y + yMidpoint) / System.Math.Sqrt(1 + slope * slope);
+
+                        if (linedist < .5)
+                        {
+                            int x1 = (xPos > 0.0 ? (int)xPos : (int)xPos - 1);
+                            int y1 = (yPos > 0.0 ? (int)yPos : (int)yPos - 1);
+                            int z1 = (zPos > 0.0 ? (int)zPos : (int)zPos - 1);
+                            iterations += 1;
+                            values += Lerp((double)source.GetValue(x0 / Frequency, y0 / Frequency, z0 / Frequency), (double)source.GetValue(x1 / Frequency, y1 / Frequency, z1 / Frequency), linedist / 0.5);
+
+                        }
+                        else
+                        {
+                            //iterations += 1;
+                            Console.WriteLine(linedist+ " " + distance);
+                            //values += (double)source.GetValue(x0 / Frequency, y0 / Frequency, z0 / Frequency);
+                        }
+
+                    }
+                }
+            }
+
+            iterations += 1;
+            values += (double)source.GetValue(x0 / Frequency, y0 / Frequency, z0 / Frequency);
+            return (double)values / iterations;
         }
     }
 	// 
